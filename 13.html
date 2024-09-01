@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Gestión de Casos de Dengue</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Algerian&display=swap');
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e9f5f2;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0px 0px 15px rgba(0,0,0,0.2);
+            border: 2px solid #4caf50;
+        }
+
+        h1 {
+            color: #4caf50;
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 24px;
+            font-family: 'Algerian', serif;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 16px;
+            color: #333;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #4caf50;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        tr:hover {
+            background-color: #ddd;
+        }
+
+        .button {
+            background: linear-gradient(to bottom, #66bb6a, #4caf50);
+            color: #fff;
+            border: none;
+            padding: 8px 12px;
+            font-size: 14px;
+            border-radius: 6px;
+            cursor: pointer;
+            text-align: center;
+            transition: background 0.3s ease;
+        }
+
+        .button:hover {
+            background: linear-gradient(to bottom, #57a14d, #388e3c);
+        }
+
+        .nuevoEstilo1 {
+            font-family: "Bahnschrift SemiLight";
+            font-size: xx-large;
+            font-weight: bold;
+            font-style: italic;
+            color: #00FF00;
+            text-decoration: none;
+        }
+
+        .nuevoEstilo1:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Gestión de Casos de Dengue</h1>
+        <table class="gridview-style">
+            <thead>
+                <tr>
+                    <th>Acciones</th>
+                    <th>ID</th>
+                    <th>FECHAREGISTRO</th>
+                    <th>NOMBREPACIENTE</th>
+                    <th>EDAD</th>
+                    <th>SEXO</th>
+                    <th>DEPARTAMENTO</th>
+                    <th>DIRECCION</th>
+                    <th>FECHAINICIOSINTOMAS</th>
+                    <th>FECHADIAGNOSTICO</th>
+                    <th>GRAVEDAD</th>
+                    <th>OBSERVACIONES</th>
+                    <th>FOTOPACIENTE</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Aquí irían los datos de la base de datos, generados dinámicamente -->
+                <tr>
+                    <td>
+                        <button class="button">Editar</button>
+                        <button class="button">Eliminar</button>
+                    </td>
+                    <td>1</td>
+                    <td>2024-08-30</td>
+                    <td>Juan Pérez</td>
+                    <td>30</td>
+                    <td>Masculino</td>
+                    <td>Ciudad</td>
+                    <td>Calle Falsa 123</td>
+                    <td>2024-08-25</td>
+                    <td>2024-08-26</td>
+                    <td>Leve</td>
+                    <td>Observación</td>
+                    <td>FotoURL</td>
+                </tr>
+                <!-- Fin de los datos dinámicos -->
+            </tbody>
+        </table>
+        <a href="index.html" class="nuevoEstilo1">REGRESAR A LA PAGINA PRINCIPAL</a>
+    </div>
+</body>
+</html>

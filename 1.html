@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agregar Nuevo Caso de Dengue</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Algerian&display=swap');
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e9f5f2; /* Color de fondo verde claro */
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        #form1 {
+            width: 90%;
+            max-width: 700px;
+            margin: 20px;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0px 0px 15px rgba(0,0,0,0.2);
+            border: 2px solid #4caf50; /* Borde verde oscuro */
+        }
+
+        h1 {
+            color: #4caf50; /* Color verde oscuro */
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 24px;
+            font-family: 'Algerian', serif; /* Fuente Algerian */
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+            text-align: center; /* Centra los elementos dentro del contenedor */
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #4caf50; /* Color verde oscuro */
+            font-size: 16px;
+        }
+
+        .form-group input[type="text"],
+        .form-group select,
+        .form-group input[type="file"],
+        .form-group textarea {
+            width: calc(100% - 24px);
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            box-sizing: border-box;
+            font-size: 16px; /* Tamaño de fuente medio */
+            text-align: center;
+        }
+
+        .form-group textarea {
+            height: 100px;
+        }
+
+        .form-group .button {
+            background: linear-gradient(to bottom, #66bb6a, #4caf50); /* Gradiente verde */
+            color: #fff;
+            border: none;
+            padding: 15px 25px; /* Tamaño más grande */
+            font-size: 18px; /* Tamaño de texto mayor */
+            border-radius: 6px;
+            cursor: pointer;
+            width: 100%;
+            text-align: center;
+            margin-top: 10px; /* Espacio arriba del botón */
+            transition: background 0.3s ease; /* Transición suave para el cambio de color */
+        }
+
+        .form-group .button:hover {
+            background: linear-gradient(to bottom, #57a14d, #388e3c); /* Verde más oscuro al pasar el cursor */
+        }
+
+        .form-group .error {
+            color: #d9534f; /* Rojo para mensajes de error */
+            font-size: 14px;
+            text-align: center;
+        }
+
+        .nuevoEstilo1 {
+            font-family: "Bahnschrift SemiLight";
+            font-size: xx-large;
+            font-weight: bold;
+            font-style: italic;
+            color: #00FF00;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="form1">
+        <h1>Agregar Nuevo Caso de Dengue</h1>
+        <form action="/ruta/a/tu/servidor" method="post" enctype="multipart/form-data">
+            <div class="form-group">
+                <label for="fechaIngreso">Fecha de Ingreso:</label>
+                <input type="text" id="fechaIngreso" name="fechaIngreso">
+            </div>
+            <div class="form-group">
+                <label for="nombrePaciente">Nombre del Paciente:</label>
+                <input type="text" id="nombrePaciente" name="nombrePaciente">
+            </div>
+            <div class="form-group">
+                <label for="edad">Edad:</label>
+                <input type="text" id="edad" name="edad">
+            </div>
+            <div class="form-group">
+                <label for="sexo">Sexo:</label>
+                <select id="sexo" name="sexo">
+                    <option value="">Seleccione</option>
+                    <option value="FEMENINO">FEMENINO</option>
+                    <option value="MASCULINO">MASCULINO</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="departamento">Departamento:</label>
+                <input type="text" id="departamento" name="departamento">
+            </div>
+            <div class="form-group">
+                <label for="direccion">Dirección:</label>
+                <input type="text" id="direccion" name="direccion">
+            </div>
+            <div class="form-group">
+                <label for="fechaSintomas">Fecha que Iniciaron los Síntomas:</label>
+                <input type="text" id="fechaSintomas" name="fechaSintomas">
+            </div>
+            <div class="form-group">
+                <label for="diagnostico">Diagnóstico:</label>
+                <input type="text" id="diagnostico" name="diagnostico">
+            </div>
+            <div class="form-group">
+                <label for="gravedad">Gravedad:</label>
+                <select id="gravedad" name="gravedad">
+                    <option value="">Seleccione</option>
+                    <option value="GRAVE">GRAVE</option>
+                    <option value="MEDIO">MEDIO</option>
+                    <option value="LEVE">LEVE</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="observaciones">Observaciones:</label>
+                <input type="text" id="observaciones" name="observaciones">
+            </div>
+            <div class="form-group">
+                <label for="fotoPaciente">Foto del Paciente:</label>
+                <input type="file" id="fotoPaciente" name="fotoPaciente">
+            </div>
+            <div class="form-group">
+                <button type="submit" class="button">AÑADIR</button>
+            </div>
+            <div class="form-group">
+                <p class="error" id="errorLabel"></p>
+            </div>
+            <br />
+            <a href="index.html" class="nuevoEstilo1">REGRESAR A LA PAGINA PRINCIPAL</a>
+        </form>
+    </div>
+</body>
+</html>
